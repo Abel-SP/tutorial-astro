@@ -1,0 +1,16 @@
+---
+interface Props {
+	enlace: string;
+	textoDelEnlace: string;
+}
+const { enlace, textoDelEnlace } = Astro.props;
+---
+
+<a href={enlace} class="texto_menu">{textoDelEnlace}</a>
+
+<style>
+	.texto_menu {
+		color: red;
+		display: block;
+	}
+</style>

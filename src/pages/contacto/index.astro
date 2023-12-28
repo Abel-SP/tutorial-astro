@@ -1,0 +1,33 @@
+---
+import Layout from "../../layouts/Layout.astro";
+---
+
+<Layout titulo="Contacto">
+	<h1>Contactanos</h1>
+	<h5>Si tenés alguna duda escribinos y nos comunicamos a la brevedad</h5>
+
+	<h2>Nuestras oficinas</h2>
+	<p>
+		Agenda tu cita en la ocifina más cercana, te proporcionaremos la
+		asistencia y consulta que te mereces
+	</p>
+
+	<h2>Contactanos</h2>
+	<p>
+		Estamos a tu servicio para lo que necesites y por el medio en que lo
+		necesites.
+	</p>
+	<ol>
+		<li>Telefono: <a href="tel:+1(360)9671732">1(360)9671732</a></li>
+		<li><a href="tel:+1(360)9671732">Whatsapp</a></li>
+	</ol>
+	<form>
+		<input type="text" name="nombre" />
+		<input type="tel" name="tel-de-contacto-whatsapp" />
+		<input type="email" name="email" />
+		<input type="text" name="consulta" />
+		<input type="file" name="archivo" />
+		<input type="submit" name="enviar" />
+		<input type="reset" name="Reset" />
+	</form>
+</Layout>

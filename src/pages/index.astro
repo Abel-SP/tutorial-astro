@@ -1,9 +1,10 @@
 ---
+import Link from "../components/Link.astro";
 import Layout from "../layouts/Layout.astro";
 const title = "Robin hud";
 ---
 
-<Layout>
+<Layout titulo={title}>
 	<h1>{title}</h1>
 
 	<p>
@@ -11,6 +12,6 @@ const title = "Robin hud";
 		nihil totam dolores amet voluptatibus non optio quisquam ducimus earum
 		corporis, autem minima tempora quidem maiores et error quasi?
 	</p>
-
-	<a href="/acerca/">acerca de</a>
+	<Link enlace="/acerca" textoDelEnlace="acerca" />
+	<Link enlace="/historia" textoDelEnlace="historia" />
 </Layout>

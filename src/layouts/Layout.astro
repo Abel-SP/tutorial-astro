@@ -1,20 +1,56 @@
 ---
 import "../style/style.css";
+interface Props {
+	titulo: string;
+}
+const { titulo } = Astro.props;
 ---
 
 <html lang="en">
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>Document</title>
-		<link rel="preconnect" href="https://fonts.googleapis.com" />
-		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-		<link
+		<meta name="author" content="Abel Spiridione" />
+		<meta
+			name="description"
+			content="Roma, el servicio juridico a tu alcance"
+		/>
+		<meta
+			name="keywords"
+			content="roma, estudio, juridico, abogados, servicio"
+		/>
+		<meta name="robots" content="index" />
+
+		<!--- Agregar Metas de OPEN GRAPH -->
+
+		<title>{titulo}</title>
+
+		<link rel="icon" type="imagen/.png" href="/logo-roma.png" /><link
+			rel="preconnect"
+			href="https://fonts.googleapis.com"
+		/><link
+			rel="preconnect"
+			href="https://fonts.gstatic.com"
+			crossorigin
+		/><link
 			href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap"
 			rel="stylesheet"
-		/>
-	</head>
+		/></head
+	>
+
 	<body>
+		<!-- Esto es todo lo que se ve en la pagina -->
+		<header>
+			<img src="/logo-roma.png" alt="Logo de la empresa" />
+			<ol>
+				<li><a href="/">Inicio</a></li>
+				<li><a href="/areas_de_practica/">Areas de practica</a></li>
+				<li><a href="/nosotros/historia">Nosotros</a></li>
+				<li><a href="/contacto/">Contacto</a></li>
+			</ol>
+			<audio src="/musica-ambiental.mp3" loop autoplay></audio>
+		</header>
+
 		<slot />
 	</body>
 </html>
